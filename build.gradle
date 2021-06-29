@@ -4,7 +4,6 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'signing'
     id "com.prot.versioninfo" version "0.5"
 }
 
@@ -114,9 +113,6 @@ publishing {
     }
 }
 
-signing {
-    sign publishing.publications.mavenJava
-}
 
 javadoc {
     if (JavaVersion.current().isJava9Compatible()) {
