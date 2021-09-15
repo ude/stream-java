@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         java: ['8']
-        gradle: ['6.2']
+        gradle: ['7.0']
     steps:
       - uses: actions/checkout@v2
         with:
